@@ -768,6 +768,7 @@ input.form-control[placeholder]:valid:not(:placeholder-shown),
   display: flex;
   align-items: center;
   gap: var(--space-sm);
+  width: max-content;
   max-width: calc(100% - 2 * var(--space-sm));
   padding: var(--space-sm) var(--space-md);
   background: var(--color-toast-bg);
