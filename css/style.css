@@ -487,6 +487,13 @@ img {
 
   .nav-item { width: 100%; }
 
+  /* Área de toque mínima de 44px nos links do menu */
+  .nav-links a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
   .dropdown-menu {
     position: static;
     display: none;
