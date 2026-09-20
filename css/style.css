@@ -487,6 +487,13 @@ img {
 
   .nav-item { width: 100%; }
 
+  /* Área de toque mínima de 44px nos links do menu */
+  .nav-links a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
   .dropdown-menu {
     position: static;
     display: none;
@@ -848,6 +855,32 @@ input.form-control[placeholder]:valid:not(:placeholder-shown),
 .footer p { margin: 0; }
 .footer a { color: var(--color-footer-text); }
 .footer :focus-visible { outline-color: var(--color-footer-focus); }
+
+/* ==========================================================================
+   12. MODO DE ALTO CONTRASTE DO WINDOWS (forced-colors)
+   O sistema ignora as cores de fundo; o que depende só de fundo precisa de contorno.
+   ========================================================================== */
+@media (forced-colors: active) {
+  /* As três linhas do ícone são apenas "fundo": sem isto, o ícone desaparece */
+  .hamburger {
+    border: 1px solid ButtonText;
+  }
+
+  .hamburger span {
+    forced-color-adjust: none;
+    background: ButtonText;
+  }
+
+  /* Componentes sem contorno próprio ganham borda em cores do sistema */
+  .modal,
+  .toast {
+    border: 2px solid CanvasText;
+  }
+
+  .badge {
+    border: 1px solid CanvasText;
+  }
+}
 
 /* Movimento reduzido (WCAG 2.3.3) */
 @media (prefers-reduced-motion: reduce) {
