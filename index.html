@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Instituto Mãos que Ajudam: organização sem fins lucrativos de Lajinha, MG, que promove inclusão social, educação e cidadania.">
+  <title>Instituto Mãos que Ajudam</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">
+        <picture>
+          <source type="image/webp" srcset="img/logo-icone-224.webp">
+          <img src="img/logo-icone.jpg" alt="" width="56" height="56">
+        </picture>
+        <h1>Instituto Mãos que Ajudam</h1>
+      </a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle-input" aria-label="Abrir menu de navegação">
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-links" aria-label="Menu principal">
+        <a href="index.html" aria-current="page">Início</a>
+
+        <div class="nav-item">
+          <a href="projetos.html">Projetos</a>
+          <ul class="dropdown-menu">
+            <li><a href="projetos.html#educacao">Educação</a></li>
+            <li><a href="projetos.html#saude">Saúde</a></li>
+            <li><a href="projetos.html#alimentacao">Assistência alimentar</a></li>
+          </ul>
+        </div>
+
+        <a href="cadastro.html">Cadastro</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <div class="container">
+      <div class="grid">
+        <section id="apresentacao" class="col-12 hero section">
+          <picture>
+            <source type="image/webp"
+                    srcset="img/banner-home-480.webp 480w,
+                            img/banner-home-800.webp 800w,
+                            img/banner-home-1200.webp 1200w,
+                            img/banner-home-1536.webp 1536w"
+                    sizes="(min-width: 1200px) 1152px, 100vw">
+            <img src="img/banner-home.jpg"
+                 alt="Banner do Instituto Mãos que Ajudam: casal de idosos sorrindo diante de um notebook, com o slogan Tecnologia também é qualidade de vida"
+                 width="1536" height="638" fetchpriority="high">
+          </picture>
+          <h2>Quem somos</h2>
+          <p>O Instituto Mãos que Ajudam é uma organização sem fins lucrativos que atua há mais de 10 anos promovendo inclusão social, educação e cidadania para comunidades em situação de vulnerabilidade.</p>
+        </section>
+
+        <section id="missao" class="col-6 card-panel">
+          <h2>Nossa missão</h2>
+          <p>Transformar vidas por meio de projetos sociais que garantam acesso à educação, saúde e oportunidades de desenvolvimento para todos.</p>
+        </section>
+
+        <section id="como-ajudar" class="col-6 card-panel">
+          <h2>Como ajudar</h2>
+          <p>Você pode fazer parte dessa transformação de duas formas:</p>
+          <ul class="list-steps">
+            <li>Doando seu tempo e suas habilidades como voluntário;</li>
+            <li>Contribuindo financeiramente com os projetos em andamento.</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-primary" href="cadastro.html">Quero ser voluntário</a>
+            <a class="btn btn-cta" href="projetos.html#doacao">Quero contribuir</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <h2>Contato</h2>
+    <address>
+      <p>E-mail: contato@maosqueajudam.org.br</p>
+      <p>Telefone: (33) 3333-4444</p>
+      <p>Endereço: Rua das Flores, 123 - Lajinha, MG</p>
+    </address>
+    <p>&copy; 2026 Instituto Mãos que Ajudam. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

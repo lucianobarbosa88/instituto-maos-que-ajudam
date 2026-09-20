@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Conheça os projetos sociais do Instituto Mãos que Ajudam em educação, saúde e assistência alimentar.">
+  <title>Nossos Projetos | Instituto Mãos que Ajudam</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">
+        <picture>
+          <source type="image/webp" srcset="img/logo-icone-224.webp">
+          <img src="img/logo-icone.jpg" alt="" width="56" height="56">
+        </picture>
+        <h1>Instituto Mãos que Ajudam</h1>
+      </a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle-input" aria-label="Abrir menu de navegação">
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-links" aria-label="Menu principal">
+        <a href="index.html">Início</a>
+
+        <div class="nav-item">
+          <a href="projetos.html" aria-current="page">Projetos</a>
+          <ul class="dropdown-menu">
+            <li><a href="projetos.html#educacao">Educação</a></li>
+            <li><a href="projetos.html#saude">Saúde</a></li>
+            <li><a href="projetos.html#alimentacao">Assistência alimentar</a></li>
+          </ul>
+        </div>
+
+        <a href="cadastro.html">Cadastro</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <div class="container">
+      <section id="introducao" class="section">
+        <h2>Nossas frentes de atuação</h2>
+        <p class="lead">O Instituto Mãos que Ajudam desenvolve projetos sociais nas áreas de educação, saúde e assistência alimentar, sempre voltados às comunidades em situação de vulnerabilidade de Lajinha e região.</p>
+      </section>
+
+      <section id="lista-projetos" class="section">
+        <h2>Projetos em andamento</h2>
+
+        <div class="grid">
+          <article id="educacao" class="col-4 project-card">
+            <span class="badge badge-educacao">Educação</span>
+            <h3>Educação para Todos</h3>
+            <picture>
+              <source type="image/webp"
+                      srcset="img/projeto-educacao-480.webp 480w,
+                              img/projeto-educacao-800.webp 800w,
+                              img/projeto-educacao-1200.webp 1200w"
+                      sizes="(min-width: 1024px) 360px, (min-width: 480px) 45vw, 100vw">
+              <img src="img/projeto-educacao.jpg"
+                   alt="Crianças participando de aula de reforço escolar em sala comunitária"
+                   width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <p>Reforço escolar gratuito para crianças e adolescentes em situação de vulnerabilidade, com apoio de voluntários da comunidade.</p>
+          </article>
+
+          <article id="saude" class="col-4 project-card">
+            <span class="badge badge-saude">Saúde</span>
+            <h3>Saúde em Ação</h3>
+            <picture>
+              <source type="image/webp"
+                      srcset="img/projeto-saude-480.webp 480w,
+                              img/projeto-saude-800.webp 800w,
+                              img/projeto-saude-1200.webp 1200w"
+                      sizes="(min-width: 1024px) 360px, (min-width: 480px) 45vw, 100vw">
+              <img src="img/projeto-saude.jpg"
+                   alt="Equipe de saúde realizando atendimento comunitário"
+                   width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <p>Mutirões periódicos de atendimento básico de saúde e orientação, em parceria com profissionais voluntários da região.</p>
+          </article>
+
+          <article id="alimentacao" class="col-4 project-card">
+            <span class="badge badge-alimentacao">Assistência alimentar</span>
+            <h3>Mesa Solidária</h3>
+            <picture>
+              <source type="image/webp"
+                      srcset="img/projeto-alimentacao-480.webp 480w,
+                              img/projeto-alimentacao-800.webp 800w,
+                              img/projeto-alimentacao-1200.webp 1200w"
+                      sizes="(min-width: 1024px) 360px, (min-width: 480px) 45vw, 100vw">
+              <img src="img/projeto-alimentacao.jpg"
+                   alt="Voluntários organizando cestas básicas para distribuição"
+                   width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <p>Distribuição mensal de cestas básicas para famílias cadastradas em situação de insegurança alimentar.</p>
+          </article>
+        </div>
+      </section>
+
+      <div class="grid">
+        <section id="voluntario" class="col-6 card-panel">
+          <picture class="panel-icon">
+            <source type="image/webp" srcset="img/projetos-1-329.webp">
+            <img src="img/projetos-1.jpg" alt="" width="329" height="329" loading="lazy" decoding="async">
+          </picture>
+          <h2>Como ser voluntário</h2>
+          <p>Você pode contribuir com seu tempo e habilidades para transformar vidas. Veja como participar:</p>
+          <ul class="list-steps">
+            <li>Preencha o formulário de cadastro;</li>
+            <li>Escolha a área de atuação de seu interesse;</li>
+            <li>Participe da reunião de integração de novos voluntários.</li>
+          </ul>
+          <a class="btn btn-primary" href="cadastro.html">Quero ser voluntário</a>
+        </section>
+
+        <section id="doacao" class="col-6 card-panel">
+          <picture class="panel-icon">
+            <source type="image/webp" srcset="img/projetos-2-359.webp">
+            <img src="img/projetos-2.jpg" alt="" width="359" height="329" loading="lazy" decoding="async">
+          </picture>
+          <h2>Como doar</h2>
+          <p>Sua contribuição financeira ajuda a manter nossos projetos ativos e alcançar mais famílias.</p>
+          <a class="btn btn-cta" href="cadastro.html">Quero contribuir</a>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <h2>Contato</h2>
+    <address>
+      <p>E-mail: contato@maosqueajudam.org.br</p>
+      <p>Telefone: (33) 3333-4444</p>
+      <p>Endereço: Rua das Flores, 123 - Lajinha, MG</p>
+    </address>
+    <p>&copy; 2026 Instituto Mãos que Ajudam. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
